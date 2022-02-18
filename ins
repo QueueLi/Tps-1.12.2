@@ -1,0 +1,7 @@
+local REPOSITORY = "https://raw.githubusercontent.com/QueueLi/Tps-1.12.2/main"
+local shell = require("shell")
+
+shell.execute("rm .shrc")
+shell.execute("wget -f https://raw.githubusercontent.com/QueueLi/Reactor-1.12.2/main/tps" .. " /home/tps.lua")
+shell.execute("wget -f https://raw.githubusercontent.com/QueueLi/Tps-1.12.2/main/reboot" .. " /home/reboot")
+shell.execute("wget -f https://raw.githubusercontent.com/QueueLi/Tps-1.12.2/main/.shrc" .. " /home/.shrc")
